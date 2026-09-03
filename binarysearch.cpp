@@ -13,5 +13,4 @@ while(s<=e){
         e = mid - 1;
     }
 }
-
-
+return -1;
