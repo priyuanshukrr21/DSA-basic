@@ -2,21 +2,14 @@
 #include<vector>
 using namespace std;
 
-void change(int* ptr) {
-    *ptr = 20;
-}
 
 int main() {
-    int a = 10;
-    cout << "Before change: " << a << endl;
 
-    change(&a);
-
-    cout << "After change: " << a << endl;
-
-
-
-
-
-    return 0;
+int arr[]= {1, 2, 3, 4, 5};
+int a = 10;
+int* ptr = &a;
+cout << ptr << endl;
+ptr = ptr + 2;
+cout << *ptr << endl;
+return 0;
 }
